@@ -49,6 +49,7 @@ def crack():
                     print("--------------------------------------")
 
                     conf_file.write("--------------KEY FOUND!--------------\n")
+                    conf_file.write(dic_name + "-----" + cap_name + "\n")
                     conf_file.write("KEY:" + result[result.index("[") + 1: result.index("]")].strip() + "\n")
                     conf_file.write("--------------------------------------\n")
                     conf_file.flush()
