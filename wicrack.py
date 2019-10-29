@@ -67,7 +67,7 @@ def crack():
 if len(sys.argv) != 3:
     print("argv error")
     print("usage wicrack dic_root_dir or dic_file cap_root_dir or cap_file")
-
+    exit();
 dic = sys.argv[1]
 cap = sys.argv[2]
 
