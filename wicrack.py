@@ -39,7 +39,7 @@ def crack():
                 result = str(popen.stdout.read(3000))
                 #显示进度
                 if "%" in result:
-                    progress = result[result.index("%") - 6: result.index("%") + 1]
+                    progress = result[result.index("Time"): result.index("%") + 1]
                     print(progress.strip(), end="\r")
                 #破解成功
                 if "KEY FOUND!" in result:
